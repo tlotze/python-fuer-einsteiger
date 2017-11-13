@@ -148,7 +148,8 @@ Boolean operations:
 
 ```python
 True and False == False;       True or False == True
-not True == False;  not 42 == False;   0 or 42 == 42
+not True == False;              True ^ True == False
+not 42 == False;    0 or 42 == 42;    42 or 43 == 42
 ```
 
 Text (unicode) strings:
@@ -175,11 +176,10 @@ f'Mr {name}: {age} years' == 'Mr Doe: 42 years'
 String methods:
 
 ```python
-upper()     casefold()   title()
-lower()     swapcase()   capitalize()
 
-center()    ljust()    rjust()
-lstrip()    rstrip()   strip()
+upper()   casefold()              center()  strip()
+lower()   swapcase()              ljust()   lstrip()
+title()   capitalize()            rjust()   rstrip()
 
 count()     index()    rindex()    find()    rfind()
 
@@ -204,6 +204,8 @@ range   tuple(range(1, 4)) == (1, 2, 3)
 
 list('ab') == ['a', 'b'];    tuple([1, 2]) == (1, 2)
 (1, 1, 2).count(1) == 2;     (1, 2, 3).index(3) == 2
+
+tuple unpacking:   x, y, z = 1, 2, 3;    x, y = y, x
 ```
 
 Sequence and string operations, slicing:
